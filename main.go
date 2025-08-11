@@ -50,6 +50,7 @@ func main() {
 	}
 
 	orig := flag.Arg(1)
+	fmt.Printf("Mount point: %s -- %s\n", flag.Arg(0), orig)
 	loopbackRoot, err := fs.NewLoopbackRoot(orig)
 	if err != nil {
 		log.Fatalf("NewLoopbackRoot(%s): %v\n", orig, err)
