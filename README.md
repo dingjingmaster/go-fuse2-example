@@ -1,0 +1,1 @@
+# go-fuse2-example
